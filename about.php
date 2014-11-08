@@ -1,38 +1,6 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Free Global Ideas Website Template | About :: w3layouts</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-</head>
+<?php include 'topo.php';?>
 <body>
-  <div class="header">
-  	 <div class="header_top">
-	        <div class="wrap">		
-		 		<div class="logo">
-						<a href="index.html"><img src="images/logo.png" alt="" /></a>
-					</div>	
-					 <div class="menu">
-					    <ul>
-							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="404.html">Clients</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<div class="clear"></div>
-						</ul>
-					 </div>						
-	    		 <div class="clear"></div>
-	        </div>
-	    </div>
-  	</div>		
+	<?php include 'menu.php';?>		
       <div class="main">
       	 <div class="icon_grids">
 	 	   <div class="wrap">
@@ -106,18 +74,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
        </div>
     </div>
-      <div class="footer">
-			<div class="wrap">
-			  <p class="address"><img src="images/location.png" alt="" /> 22-56-2-9 Sit Amet,USA</p> <p class="phone"><img src="images/phone.png" alt="" /> Call Us Now: <span>(000)1234-5678</span></p>
-		      <div class="clear"></div>
-		</div>	
-	  </div>
-     <div class="copy-right">
-			<div class="wrap">
-			     <p>Company Name © All Rights Reseverd | Design by  <a href="http://w3layouts.com">W3Layouts</a></p>
-		      <div class="clear"></div>
-		</div>	
-	</div>
+	<?php include 'rodape.php';?>
 </body>
 </html>
 

@@ -5,14 +5,12 @@
 						<a href="index.html"><img src="images/logo.png" alt="" /></a>
 					</div>	
 					 <div class="menu">
-					    <ul>
-					    	
+					    <ul>					    	
 							<li class="active"><a href="index.php">Home</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="services.php">Services</a></li>
 							<li><a href="404.php">Clients</a></li>
-							<li><a href="contact.php">Contact</a></li>
-							<div class="clear"></div>
+							<li><a href="contact.php">Contact</a></li>							
 						</ul>
 					 </div>						
 	    		 <div class="clear"></div>
@@ -28,6 +26,7 @@
 					      <li><img src="images/slider2.jpg" alt=""></li>
 					      <li><img src="images/slider1.jpg" alt=""></li>
 					       <li><img src="images/slider4.jpg" alt=""></li>
+					     </ul>
 					</div>
 			<!--End-image-slider---->
 			<?php } ?>

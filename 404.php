@@ -2,14 +2,7 @@
 <body>
 	<?php include 'menu.php';?>			
       <div class="main">
-      	 <div class="services">
-      	   <div class="wrap">
-	      	   <div class="error-page">
-				<p>Page Not Found!</p>
-				<h3>404</h3>
-			</div>		 	   
-	     </div>
-	   </div>
+      	 <?php var_dump($_FILES);?>
     </div>
       <?php include 'rodape.php';?>
 </body>

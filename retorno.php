@@ -1,4 +1,5 @@
 <?php 
+
 session_start();
 
 include 'topo.php';?>
@@ -23,6 +24,7 @@ include 'topo.php';?>
 								//var_dump($linha);
 								foreach ($linha as $coluna => $valor){
 									echo $coluna. ": ". $valor. "<br/>";
+									
 								
 								}
 					?>

@@ -10,13 +10,13 @@ include 'topo.php';?>
 				<div class="section group">
 					<div class="col span_1_of_3">
 						<div class="contact_info">
-							<h3>Find Us Here</h3>
+							<h3>Encontre nos aqui</h3>
 							<div class="map">
 								<iframe width="100%" height="400" frameborder="0" scrolling="no"
 									marginheight="0" marginwidth="0"
 									src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe>
 								<br> <small><a
-									href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265"
+									href="https://www.google.co.in/maps/place/ighthouse+Point,+FL,+United+States/@-3.1289441,-60.0208871,16z/data=!4m2!3m1!1s0x926c0567d6e5a85b:0xf0db730c4985e2dc"
 									style="color: #666; text-align: left; font-size: 0.85em">View
 										Larger Map</a> </small>
 							</div>
@@ -24,13 +24,16 @@ include 'topo.php';?>
 					</div>
 					<div class="col span_2_of_3">
 						<div class="contact-form">
-							<h3>Contact Us</h3>
-
-							
-							<form method="post" action="actions/recebedados.php">
+							<h3>Contate nos</h3>
+							<form method="post" enctype="multipart/form-data"
+								action="actions/recebedados.php">
 								<div>
-									<span><label>NAME</label> </span> <span><input name="userName"
+									<span><label>NOME</label> </span> <span><input name="userName"
 										type="text" class="textbox" required="required"> </span>
+								</div>
+								<div>
+									<span><label>Foto do perfil</label> </span> <span><input name="foto"
+										type="file"> </span>
 								</div>
 								<div>
 									<span><label>Assunto</label> </span> <span> <select
@@ -44,8 +47,8 @@ include 'topo.php';?>
 								</div>
 								<div>
 									<span><label>SEXO</label> </span> <span> <input type="radio"
-										name="userSexo" value="M"><label>M</label> <input
-										type="radio" name="userSexo" value="F"><label>F</label>
+										name="userSexo" value="M"><label>M</label> <input type="radio"
+										class="textbox" name="userSexo" value="F"><label>F</label>
 									</span>
 								</div>
 								<div>
@@ -68,14 +71,18 @@ include 'topo.php';?>
 										class="textbox"><label>Noite</label>
 									</span>
 								</div>
-
+								<div>
+									<span><label>Enviar Curriculum</label> </span> <span><input name="arquivo"
+										type="file"> </span>
+								</div>
 								<div>
 									<span><label>SUBJECT</label> </span> <span><textarea
 											name="userMsg" required="required"></textarea> </span>
 								</div>
 								<div>
-									<span><input type="submit" class="mybutton" value="Submit"> </span>
+									<span><input type="submit" class="mybutton" value="Enviar"> </span>
 								</div>
+
 							</form>
 
 						</div>

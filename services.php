@@ -10,9 +10,9 @@
 						  <img src="images/service-6.png" alt="">
 					</div>
 				    <div class="text list_2_of_1">
-						<h3>Service 01</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<div class="more_info"><a href="#">More Info</a></div>
+						<h3>Gerador de Curriculum</h3>
+						<p>Faça seu curriculum vitae com nosso sistema de gerar curriculo em PDF, nele você encontrará a facilidade de apenas uns clicks e você terá o arquivo PDF curriculum para prontamente enviar a todas as empresas que desejar.</p>
+						<div class="more_info"><a href="formcurriculum.php">Faça já o seu</a></div>
 				   </div>
 			   </div>			
 				<div class="listview_1_of_2 images_1_of_2">

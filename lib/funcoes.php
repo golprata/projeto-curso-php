@@ -22,7 +22,7 @@ function enviaEmail($destinatario, $assunto, $mensagem, $remetente, $anexos = ar
 		}
 	}
 	// Envia CC
-	//$mail->AddCC ( "marcio.palheta@gmail.com" );
+	$mail->AddCC ( "fabiano_81@hotmail.com" );
 	// Envia BCC
 	//$mail->AddBCC ( "eder.franco@outlook.com" );
 	

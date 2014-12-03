@@ -2,7 +2,7 @@
 <body>
 	<?php include 'menu.php';?>			
       <div class="main">
-      	 <?php var_dump($_FILES);?>
+      	 <?php var_dump($_POST);?>
     </div>
       <?php include 'rodape.php';?>
 </body>

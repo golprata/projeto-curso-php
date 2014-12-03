@@ -3,6 +3,7 @@ $index="";
 $about="";
 $services="";
 $contact="";
+$cadastro="";
 if(strpos($_SERVER['PHP_SELF'],"index.php"))
 	$index='active';
 else if(strpos($_SERVER['PHP_SELF'],"about.php"))
@@ -10,7 +11,9 @@ else if(strpos($_SERVER['PHP_SELF'],"about.php"))
 else if(strpos($_SERVER['PHP_SELF'],"services.php"))
 	$services='active';
 else if(strpos($_SERVER['PHP_SELF'],"contact.php"))
-	$contact='active';?>
+	$contact='active';
+else if(strpos($_SERVER['PHP_SELF'],"telacadastro.php"))
+	$cadastro='active';?>
 <div class="header">
 	<div class="header_top">
 		<div class="wrap">
@@ -20,11 +23,11 @@ else if(strpos($_SERVER['PHP_SELF'],"contact.php"))
 			<div class="menu">
 				<ul>					
 					<li class=<?php echo $index?>><a href="index.php">Home</a></li>
-					<li class=<?php echo $about?>><a href="about.php">Sobre</a></li>
+					<li class=<?php echo $cadastro?>><a href="telacadastro.php">Cadastro</a></li>
 					<li class=<?php echo $services?>><a href="services.php">Serviços</a></li>
-					<li><a href="404.php">Clientes</a></li>
-					
+										
 					<li class=<?php echo $contact?>><a href="contact.php">Contato</a></li>
+					<li class=<?php echo $about?>><a href="about.php">Sobre</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>

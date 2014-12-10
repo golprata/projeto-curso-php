@@ -13,7 +13,7 @@ include 'topo.php';?>
 					<div class="col span_2_of_3">
 						<div class="contact-form">
 							<h3>Cadastre-se</h3>
-							<form method="post" enctype="multipart/form-data"
+							<form id="formcadastro" method="post" enctype="multipart/form-data"
 								action="usuarioController.php">
 								<div>
 									<span><label>NOME</label> </span> <span><input name="nome"
@@ -66,13 +66,13 @@ include 'topo.php';?>
 								</div>
 								<div>
 									<span><label>DATA DE NASCIMENTO</label> </span> <span><input
-										name="nascimento" type="text" class="textbox"
-										required="required" OnKeyPress="formatar('##/##/####', this)"> </span>
+										name="nascimento" type="text" id="textdata"
+										required="required"> </span>
 								</div>
 								<div>
 									<span><label>TELEFONE</label> </span> <span><input
 										name="telefone" type="text" class="textbox"
-										required="required" OnKeyPress="formatar('##-####-####', this)"> </span>
+										required="required" id="texttelefone"> </span>
 								</div>
 								<div>
 									<span><label>E-MAIL</label> </span> <span><input
@@ -80,7 +80,7 @@ include 'topo.php';?>
 										required="required"> </span>
 								</div>
 								<div>
-									<span><label>SENHA</label> </span> <span><input name="senha"
+									<span><label>SENHA</label> </span> <span><input id="textsenha" name="senha"
 										type="password" required="required"> </span>
 								</div>
 								<div>

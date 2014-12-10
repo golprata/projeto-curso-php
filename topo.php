@@ -27,7 +27,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			      });
 			});
 				$(function(){
-					$("#telefone").mask("(99)9999-9999");
+					$("#texttelefone").mask("(99)9999-9999");
+					$("#textdata").mask("99/99/9999");
 					
 				});
 				
@@ -61,7 +62,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									$("#addInfo").hide();
 					     		contInfo++;
 					     	}
-				     	});					   
+				     	});	
+				     	
+				     	$(":submit").click(function(){
+					     	alert($(":text").text());
+					     	});				   
 				    }); 			    
 			    
 		  </script>

@@ -1,8 +1,14 @@
-<?php include 'topo.php';?>
+<?php include 'topo.php';
+include 'actions/Contato.php';?>
 <body>
 	<?php include 'menu.php';?>			
       <div class="main">
-      	 <?php var_dump($_POST);?>
+      	
+      	 <?php 
+      	 
+      	 $obj = new Contato();
+      	 $obj->
+      	 var_dump($_POST);?>
     </div>
       <?php include 'rodape.php';?>
 </body>

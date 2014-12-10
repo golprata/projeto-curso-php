@@ -3,8 +3,11 @@
 session_start();
 header('Content-Type: text/html; charset=UTF-8');
 ini_set("upload_max_filesize ", "50MB");
+
 include '../lib/funcoes.php';
 include '../config/conexao.php';
+
+
 
 $anexos = array();
 //Valida se o campo imagem é válido

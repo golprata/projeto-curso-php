@@ -77,7 +77,7 @@ include 'topo.php';?>
 								</div>
 								<div>
 									<span><label>Telefone</label> </span> <span><input
-										name="telefone" type="text" id="telefone" class="textbox"> </span>
+										name="telefone" type="text" id="texttelefone" class="textbox"> </span>
 								</div>
 								<div>
 									<span><label>E-mail</label> </span> <span><input name="email"
@@ -94,7 +94,7 @@ include 'topo.php';?>
 								<div>
 									<span> </span> <span> <select class="select" name="conclusao">
 											<option value="">Escolha</option>
-											<option value="Concluiso em: ">Concluido em:</option>
+											<option value="Concluido em: ">Concluido em:</option>
 											<option value="Previsão de cunclusão: ">Previsão de
 												cunclusão:</option>
 

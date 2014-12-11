@@ -5,9 +5,7 @@ include 'actions/Contato.php';?>
       <div class="main">
       	
       	 <?php 
-      	 
       	 $obj = new Contato();
-      	 $obj->
       	 var_dump($_POST);?>
     </div>
       <?php include 'rodape.php';?>

@@ -53,7 +53,7 @@ include 'topo.php';?>
 								</div>
 								<div>
 									<span><label>TELEFONE</label> </span> <span><input
-										name="telefone" type="text" class="textbox"
+										name="telefone" type="text" class="textbox" id="texttelefone"
 										required="required"> </span>
 								</div>
 								<div>

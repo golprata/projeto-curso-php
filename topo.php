@@ -1,4 +1,3 @@
-<?php include 'config/conexao.php';?>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -41,10 +40,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						alert("FABIANO NA AREA!!!");
 						return false;
 					}else
-						post("gerarpdf.php");
+						//post("gerarpdf.php");
 						return true;
 			    }
-			    
+
+			    function comparaSenhas(){
+					//var form = 
+					var senha = formCadastro.senha.value;
+					var confirmasenha = formCadastro.confirmasenha.value;
+
+					if(senha != confirmasenha){
+						alert("SENHAS DIFERENTES!!!");
+						return false;
+					}else
+						return true;
+			    }
 			    
 			    $(document).ready(function(){			    		
 				     	$("#addAtv").click(function(){
@@ -62,11 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									$("#addInfo").hide();
 					     		contInfo++;
 					     	}
-				     	});	
-				     	
-				     	$(":submit").click(function(){
-					     	alert($(":text").text());
-					     	});				   
+				     	});				   
 				    }); 			    
 			    
 		  </script>

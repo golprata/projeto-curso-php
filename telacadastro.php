@@ -13,16 +13,15 @@ include 'topo.php';?>
 					<div class="col span_2_of_3">
 						<div class="contact-form">
 							<h3>Cadastre-se</h3>
-							<form id="formcadastro" method="post" enctype="multipart/form-data"
-								action="usuarioController.php">
+							<form method="post" enctype="multipart/form-data" name="formCadastro" action="actions/usuarioController.php" onsubmit="return comparaSenhas();">
 								<div>
 									<span><label>NOME</label> </span> <span><input name="nome"
-										type="text" class="textbox" required="required"> </span>
+										type="text" class="textbox"> </span>
 								</div>
 								<div>
 									<span><label>CIDADE</label> </span> <span><input
 										name="cidade" type="text" class="textbox"
-										required="required"> </span>
+										> </span>
 								</div>
 								<div>
 									<span> <label>ESTADO</label>
@@ -67,25 +66,25 @@ include 'topo.php';?>
 								<div>
 									<span><label>DATA DE NASCIMENTO</label> </span> <span><input
 										name="nascimento" type="text" id="textdata"
-										required="required"> </span>
+										> </span>
 								</div>
 								<div>
 									<span><label>TELEFONE</label> </span> <span><input
 										name="telefone" type="text" class="textbox"
-										required="required" id="texttelefone"> </span>
+										id="texttelefone"> </span>
 								</div>
 								<div>
 									<span><label>E-MAIL</label> </span> <span><input
 										name="email" type="email" class="textbox"
-										required="required"> </span>
+										> </span>
 								</div>
 								<div>
-									<span><label>SENHA</label> </span> <span><input id="textsenha" name="senha"
-										type="password" required="required"> </span>
+									<span><label>SENHA</label> </span> <span><input name="senha"
+										type="password"> </span>
 								</div>
 								<div>
 									<span><label>CONFIRME SUA SENHA</label> </span> <span><input
-										name="confirmasenha" type="password" required="required"> </span>
+										name="confirmasenha" type="password"> </span>
 								</div>
 								<div>
 									<span><input type="submit" class="mybutton" value="Enviar"> </span>

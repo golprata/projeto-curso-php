@@ -1,82 +1,96 @@
 <?php
- class Contato{
-	private $id = null;
-	private $nome = null;
-	private $email = null;
-	private $sexo = null;
-	private $assunto = null;
-	private $melhorHorario = null;
-	private $mensagem = null;
-	private $telefone = null;
-	private $dataContato = null;
+class Contato {
+	private $id;
+	private $nome;
+	private $email;
+	private $sexo;
+	private $assunto;
+	private $melhorHorario;
+	private $mensagem;
+	private $telefone;
+	private $dataCadastro;
 	
-	public function Contato(){
-		$this->id = "";
-		$this->nome = "";
-		$this->email = "";
-		$this->assunto = ""; 
-		$this->melhorHorario = ""; 
-		$this->mensagem = "";
-		$this->telefone = ""; 
-		$this->dataContato = "";
-	}
-	public function setId($id){
-		$this->id = $id;
-	}
-	public function setNome($nome){
+	public function __construct($nome = null, $email = null, $sexo = null, $assunto = null, $melhorHorario = null, $mensagem = null, $telefone = null, $dataCadastro = null) {
+		$this->id = null;
 		$this->nome = $nome;
-	}
-	public function setEmail($email){
 		$this->email = $email;
-	}
-	public function setSexo($sexo){
 		$this->sexo = $sexo;
-	}
-	public function setAssunto($assunto){
 		$this->assunto = $assunto;
-	}
-	public function setMelhorHorario($melhorHorario){
 		$this->melhorHorario = $melhorHorario;
-	}
-	public function setMensagem($mensagem){
 		$this->mensagem = $mensagem;
-	}
-	public function setTelefone($telefone){
 		$this->telefone = $telefone;
+		$this->dataCadastro = $dataCadastro;
 	}
-	public function setDataContato($dataContato){
-		$this->dataContato = $dataContato;
-	}
-	public function getId(){
+	public function getId() {
 		return $this->id;
 	}
-	public function getNome(){
+	public function setId($id) {
+		$this->id = $id;
+		return $this;
+	}
+	public function getNome() {
 		return $this->nome;
 	}
-	public function getEmail(){
+	public function setNome($nome) {
+		$this->nome = $nome;
+		return $this;
+	}
+	public function getEmail() {
 		return $this->email;
 	}
-	public function getSexo(){
+	public function setEmail($email) {
+		$this->email = $email;
+		return $this;
+	}
+	public function getSexo() {
 		return $this->sexo;
 	}
-	public function getAssunto(){
+	public function setSexo($sexo) {
+		$this->sexo = $sexo;
+		return $this;
+	}
+	public function getAssunto() {
 		return $this->assunto;
 	}
-	public function getMelhorHorario(){
+	public function setAssunto($assunto) {
+		$this->assunto = $assunto;
+		return $this;
+	}
+	public function getMelhorHorario() {
 		return $this->melhorHorario;
 	}
-	public function getMensagem(){
+	public function setMelhorHorario($melhorHorario) {
+		$this->melhorHorario = $melhorHorario;
+		return $this;
+	}
+	public function getMensagem() {
 		return $this->mensagem;
 	}
-	public function getTelefone(){
+	public function setMensagem($mensagem) {
+		$this->mensagem = $mensagem;
+		return $this;
+	}
+	public function getTelefone() {
 		return $this->telefone;
 	}
-	public function getDataContato(){
-		return $this->dataContato;
+	public function setTelefone($telefone) {
+		$this->telefone = $telefone;
+		return $this;
 	}
-	
-
+	public function getDataCadastro() {
+		return $this->dataCadastro;
+	}
+	public function setDataCadastro($dataCadastro) {
+		$this->dataCadastro = $dataCadastro;
+		return $this;
+	}
+// 	public function inserirContato() {
+// 		$query = "INSERT INTO contato (nome, email, sexo, assunto, melhorHorario,mensagem, telefone, dataCadastro) VALUES ('" . $this->nome . "','" . $this->email . "','" . $this->sexo . "','" . $this->assunto . "','" . $this->melhorHorario . "','" . $this->mensagem . "','" . $this->telefone . "','" . $this->dataCadastro . "')";
+		
+// 		$result = mysql_query ( $query );
+// 		return $result;
+// 	}
 }
-$cont = new Contato();
-$cont->setNome("Fabiano Costa");
-echo $cont->getNome();
+
+
+
